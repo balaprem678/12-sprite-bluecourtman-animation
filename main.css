@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 160px;
+  height: 421px;
+  border: solid 1px #ccc;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#images {
+  position: relative;
+  width: 1600px;
+  height: 421px;
+  animation-name: manwalking;
+  animation-timing-function: steps(19);
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  transform: translateX(0px);
+}
+@keyframes manwalking {
+  100% {
+    transform: translateX(-3200px);
+  }
+}
+#img-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#img-2 {
+  position: absolute;
+  top: -421px;
+  left: 1600px;
+}
+
